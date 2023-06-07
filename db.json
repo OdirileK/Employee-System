@@ -1,12 +1,3 @@
 {
-  "employee": [
-    {
-      "name": "vc ",
-      "surname": "maybe",
-      "email": "gkb@gjb",
-      "bio": " ",
-      "role": "",
-      "id": 1
-    }
-  ]
+  "employee": []
 }
