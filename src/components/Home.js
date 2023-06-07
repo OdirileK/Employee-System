@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 
-const Home = () => {
+const Home = ({selectedImage}) => {
      const [data, setData] = useState([]);
      
     useEffect(() => {
@@ -52,11 +52,14 @@ const Home = () => {
                     <td>{item.id}</td>
                     <td>
                     <div className="d-flex align-items-center ">
-                                        {<img className="rounded-circle"
-                                        src={`http://localhost:3003/employee?image=` + item.image} 
-                                        width="50" 
-                                        height="50" 
-                                        alt=""/>}
+                    {selectedImage && (
+        <img className="rounded-circle"
+        src={selectedImage} alt="Selected"
+        width="50" 
+        height="50" 
+       />
+      )}
+                                        {}
                                         </div>
                     </td>
                     <td>{item.name}</td>
